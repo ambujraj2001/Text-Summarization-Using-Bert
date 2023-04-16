@@ -19,7 +19,7 @@ def summary(txt):
         loaded_model = pickle.load(open('bert.sav', 'rb'))
         summary = loaded_model(txt, min_length=50)
     st.success('Your Summary is ready and is given below ⬇️')
-    st.caption(summary)
+    st.subheader(summary)
 
 st.title('Text Summarization Using BERT')
 st.divider()
